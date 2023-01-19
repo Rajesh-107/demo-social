@@ -1,6 +1,10 @@
 import React from "react";
 import "./Navbar.scss";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import MarkChatUnreadOutlinedIcon from '@mui/icons-material/MarkChatUnreadOutlined';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+
 const Navbar = () => {
   return (
     <div className="navbarContainer">
@@ -13,11 +17,23 @@ const Navbar = () => {
           <input
             type="text"
             className="searchInput"
-            placeholder="Enter your text here"
+            placeholder="Search Facebook"
           />
         </div>
       </div>
-      <div className="navRight">right</div>
+      <div className="navRight">
+        <div className="navbarLinks">
+            
+        </div>
+        <div className="navbarIcons">
+            <div className="navbarIconItem">
+                
+                <span className="navbarlink"> <MarkChatUnreadOutlinedIcon/> </span>
+                <span className="navbarlink"> <AccountCircleOutlinedIcon/> </span>
+            <span className="navbarlink"> <NotificationsNoneOutlinedIcon/> </span>
+            </div>
+        </div>
+      </div>
     </div>
   );
 };
