@@ -1,0 +1,77 @@
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 25px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .insidemodal{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cancel{
+    font-size: larger;
+    cursor: pointer;
+  }
+  .cancel:hover{
+    background-color: #aaa;
+    
+    border-radius: 50%;
+   
+   
+  }
+
+  .shareInput{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+
+    &:hover{
+        outline: none;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
+    outline: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    textarea {
+      width: 80%;
+      height: 150px;
+    }
+    .modal{
+        display: none;
+    }
+  }
