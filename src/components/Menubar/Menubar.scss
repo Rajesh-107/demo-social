@@ -1,0 +1,20 @@
+.menubar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+
+
+    .menubarText{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .menubarText:hover{
+        color: rgb(112, 86, 244);
+    }
+}
+

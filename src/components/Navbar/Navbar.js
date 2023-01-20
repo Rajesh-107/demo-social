@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="navleft">
-        <span className="logo">Facebook</span>
+        <span className="logo">SocialBook</span>
       </div>
       <div className="navMiddle">
         <div className="searchbar">
