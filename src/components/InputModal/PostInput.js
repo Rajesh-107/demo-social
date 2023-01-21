@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import InputPostCategory from "../InputPostCategory/InputPostCategory";
 import "./PostInput.scss";
 
 const PostInput = () => {
@@ -14,10 +15,10 @@ const PostInput = () => {
               <div className="insidemodal">
               <h3>Create Post</h3>
               <span className="cancel" onClick={() => setModalOpen(false)}>&times;</span>
-             
+            
               </div>
               <hr/>
-             
+              <InputPostCategory/>
              <textarea className="textarea" placeholder="What do you want to talk about?" rows="" cols=""></textarea>
             </div>
           </div>

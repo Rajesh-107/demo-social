@@ -32,7 +32,7 @@ const Sidebar = () => {
                {/* {Users.map((user) => (<Friends user={user}/>))} */}
                <Friends/>
             </ul>
-
+               
             </div>
         </div>
     );

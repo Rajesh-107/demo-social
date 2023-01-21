@@ -1,0 +1,19 @@
+.responsive-button {
+    background-color: rgb(134, 127, 135);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 55px;
+   
+  
+    
+}
+
+@media screen and (max-width: 600px) {
+    .responsive-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

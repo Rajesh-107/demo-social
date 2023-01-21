@@ -56,5 +56,58 @@
                 cursor: pointer;
             }
         }
+        .postBottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .postBottomLeft{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .bottomLeftIcon{
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+                .postLikeCount{
+                    font-size: 15px;
+                }
+            }
+            .postbottomRight{
+                .postCommentText{
+                    font-size: 15px;
+                    cursor: pointer;
+                    color: gray;
+                }
+            }
+        }
+
+        .footerHr{
+            margin: 10px 0;
+        }
+        .bottomFooter{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .postbottomFooterItem{
+                display: flex;
+                align-items: center;
+                padding: 7px;
+                cursor: pointer;
+
+
+                .footerIcon{
+                    color: #333;
+                    font-weight: 30px;
+                    margin-right: 10px;
+                }
+
+                .footerText{
+                    font-weight: 500;
+                }
+            }
+        }
     }
 }

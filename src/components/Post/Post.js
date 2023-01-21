@@ -1,7 +1,8 @@
-import { Favorite, MoreVert, ThumbUp } from "@mui/icons-material";
+import { ChatBubbleOutline, Favorite, MoreVert, ShapeLineOutlined, ShareOutlined, ThumbDownAltOutlined, ThumbUp, ThumbUpAltOutlined } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import "./Post.scss";
+import IosShareIcon from '@mui/icons-material/IosShare';
 
 const Post = ({ post }) => {
   const [users, setUsers] = useState([]);
@@ -11,6 +12,7 @@ const Post = ({ post }) => {
       .then((response) => response.json())
       .then((data) => setUsers(data));
   }, []);
+
   return (
     <div className="post">
       <div className="postWrapper">
@@ -31,21 +33,44 @@ const Post = ({ post }) => {
           </div>
           <div className="postTopRight">
             <IconButton>
-                <MoreVert className="postVert"/>
+              <MoreVert className="postVert" />
             </IconButton>
           </div>
         </div>
         <div className="postCenter">
-            <span className="postText">{post.body}</span>
-            <img src={post.photo} className="postImg" alt=""/>
+          <span className="postText">{post.body}</span>
+          <img src={post.photo} className="postImg" alt="" />
         </div>
         <div className="postBottom">
-            <div className="postBottomLeft">
-                <Favorite className="bottomLeftIcon"/>
-                <ThumbUp className="bottomLeftIcon"/>
-                <span className="postLikeCount">{post.like}</span>
-            </div>
+          <div className="postBottomLeft">
+            <Favorite className="bottomLeftIcon" style={{color:"red"}} />
+            <ThumbUp className="bottomLeftIcon" style={{color:"blue"}} />
+            <span className="postLikeCount">{post.like}</span>
+          </div>
+          <div className="postbottomRight">
+            <span className="postCommentText">
+              {post.comment}
+              .comments . <IosShareIcon className="bottomLeftIcon"/>
+            </span>
+          </div>
         </div>
+
+        <hr className='footerHr'/>
+                <div className='bottomFooter'>
+                    <div className='postbottomFooterItem'>
+                        <ThumbUpAltOutlined className="footerIcon"/>
+                        <span className="footerText">Like</span>
+                    </div>
+                    <div className='postbottomFooterItem'>
+                        <ChatBubbleOutline className="footerIcon"/>
+                        <span className="footerText">Comment</span>
+                    </div>
+                    <div className='postbottomFooterItem'>
+                        <ShareOutlined className="footerIcon"/>
+                        <span className="footerText">Share</span>
+                    </div>
+                </div>
+
       </div>
     </div>
   );
