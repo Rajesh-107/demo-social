@@ -25,12 +25,12 @@ const Sidebar = () => {
                <hr className='sidebarHr'/>
 
             <ul className='sidebarFriendList'>
-                <div className='request'>
+                {/* <div className='request'>
                 <h1>Frined Request</h1>
                 <h1 className='seeall'>See All</h1>
-                </div>
+                </div> */}
                {/* {Users.map((user) => (<Friends user={user}/>))} */}
-               <Friends/>
+               {/* <Friends/> */}
             </ul>
                
             </div>

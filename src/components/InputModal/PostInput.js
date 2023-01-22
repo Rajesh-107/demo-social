@@ -20,10 +20,15 @@ const PostInput = () => {
               <hr/>
               <InputPostCategory/>
              <textarea className="textarea" placeholder="What do you want to talk about?" rows="" cols=""></textarea>
+             <button class="bg-blue-500 rounded-md text-white text-sm font-bold py-1 px-2">Post</button>
             </div>
+            
           </div>
+          
         )}
+        
       </div>
+      
     </div>
   );
 };

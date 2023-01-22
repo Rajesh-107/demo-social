@@ -1,8 +1,9 @@
-import { ChatBubbleOutline, Favorite, MoreVert, ShapeLineOutlined, ShareOutlined, ThumbDownAltOutlined, ThumbUp, ThumbUpAltOutlined } from "@mui/icons-material";
+import { ChatBubbleOutline, Favorite, MoreVert, ShareOutlined, ThumbUp, ThumbUpAltOutlined } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import "./Post.scss";
 import IosShareIcon from '@mui/icons-material/IosShare';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const Post = ({ post }) => {
   const [users, setUsers] = useState([]);
@@ -68,6 +69,10 @@ const Post = ({ post }) => {
                     <div className='postbottomFooterItem'>
                         <ShareOutlined className="footerIcon"/>
                         <span className="footerText">Share</span>
+                    </div>
+                    <div className='postbottomFooterItem'>
+                        <LocalMallIcon className="footerIcon"/>
+                        <span className="footerText">Add To Cart</span>
                     </div>
                 </div>
 

@@ -4,6 +4,7 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import MarkChatUnreadOutlinedIcon from '@mui/icons-material/MarkChatUnreadOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import { ShoppingCart } from "@mui/icons-material";
 
 const Navbar = () => {
   return (
@@ -30,7 +31,8 @@ const Navbar = () => {
                 
                 <span className="navbarlink"> <MarkChatUnreadOutlinedIcon/> </span>
                 <span className="navbarlink"> <AccountCircleOutlinedIcon/> </span>
-            <span className="navbarlink"> <NotificationsNoneOutlinedIcon/> </span>
+                <span className="navbarlink"> <NotificationsNoneOutlinedIcon/> </span>
+                <span className="navbarlink"> <ShoppingCart/> </span>
             </div>
         </div>
       </div>

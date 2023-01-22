@@ -11,7 +11,7 @@ const InputPostCategory = () => {
     <div class="mt-3 mb-3 xl:w-96">
       <select class="form-select 
         block
-        
+        w-full
         px-3
         py-1.5
         text-base
@@ -19,7 +19,7 @@ const InputPostCategory = () => {
         text-gray-700
         bg-white bg-clip-padding bg-no-repeat
          border-gray-300
-        
+      
         transition
         ease-in-out
         m-0
@@ -30,6 +30,8 @@ const InputPostCategory = () => {
           <option value="3">Service Management</option>
       </select>
     </div>
+
+    
   </div>
   );
 };
